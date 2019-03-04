@@ -4,7 +4,8 @@
   padding: 40rpx;
 }
 .log-item {
-  margin: 20rpx;
+  margin: auto;
+
 }
 .tips{
   color: red;
@@ -14,5 +15,16 @@
   height: 70rpx;
 }
 .allContent{
-  height: 80prx;
+  height: 80rpx;
+}
+.title{
+  font-style: oblique;
+  margin-bottom: 60rpx;
+  text-align: center;
+  font-size: 25rpx;
+}
+
+.delButton{
+  margin: 0,auto;
+  text-align: right
 }
