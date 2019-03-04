@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "查看日志",
+  "usingComponents": {
+    "van-panel": "../../vant/panel/index",
+    "van-button": "../../vant/button/index",
+    "van-dialog": "../../vant/dialog/index",
+    "van-notify": "../../vant/notify/index"
+    }
+}

@@ -1,0 +1,19 @@
+<!--logs.wxml-->
+<van-notify id="custom-selector"/> <!-- 顶部提示-->
+<view class='tipss'>
+  <text class='tips'>向下滑动刷新</text>
+</view>
+<view class='allContent'>
+    <view>日期---仅显示最近20条</view>
+    <block wx:for="{{logs}}" wx:for-item="log">
+      <view slot="footer">
+
+        <text class="log-item">{{log.pubDate}}</text>
+        <text>------------</text>
+        <van-button class='custom-class' size="normal" type="danger" bind:click="delete_inv" data-id="{{log.invID}}">删除
+        
+        </van-button>
+        <van-dialog id="van-dialog"/>
+      </view>
+    </block>
+</view>

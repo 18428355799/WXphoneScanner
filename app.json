@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "QR Scan",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "扫一扫",
+      "iconPath": "icon/qrcode.png",
+      "selectedIconPath": "icon/qrcode_selected.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "更多",
+      "iconPath": "icon/up.png",
+      "selectedIconPath": "icon/up-selected.png"
+    }],
+    "color": "#000000",
+    "selectedColor": "#FF00FF"
+  }
+}

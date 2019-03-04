@@ -1,0 +1,18 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 20rpx;
+}
+.tips{
+  color: red;
+}
+.tipss{
+  text-align: center;
+  height: 70rpx;
+}
+.allContent{
+  height: 80prx;
+}
