@@ -17,7 +17,7 @@ Page({
     wx.scanCode({
       scanType: ['qrCode'],
       success: res => {
-        console.log(res);
+        //console.log(res);
         wx.request({
           url: app.globalData.ip+'index',
           data: {
@@ -25,18 +25,27 @@ Page({
           },
           method: 'GET',
           success: function(res) {
-            //console.log(res);
+            console.log(res);
             Notify({
-              text: res.data,
-              duration: 4000,
+              text: res.data.msg,
+              duration: 2000,
               selector: '#custom-selector',
               backgroundColor: '#1989fa'
             });
+            setTimeout(function(){  //延时
+              Notify({
+                text: res.data.data.content,
+                duration: 3000,
+                selector: '#custom-selector',
+                backgroundColor: '#1989fa'
+              })
+            },2000)
+            ;
           },
           fail: function(err) {
-            //console.log(err);
+            console.log(err);
             Notify({
-              text: "扫描失败！",
+              text: "网络请求失败！",
               duration: 4000,
               selector: '#custom-selector',
               backgroundColor: '#8B008B'
@@ -45,7 +54,12 @@ Page({
         })
       },
       fail: err => {
-        console.log(err);
+        Notify({
+          text: "解析二维码失败!",
+          duration: 4000,
+          selector: '#custom-selector',
+          backgroundColor: '#8B008B'
+        })
       }
     })
   },
