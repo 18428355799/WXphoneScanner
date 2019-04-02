@@ -45,6 +45,7 @@ Page({
     })
   },
   fpNumberInput: function(e){
+    console.log(e)
     this.setData({
       fpNumber: e.detail.value
     })

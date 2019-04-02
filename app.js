@@ -101,10 +101,8 @@ App({
   },
   globalData: { //全局变量  
     userInfo: null,
-    //ip: "http://localhost:8099/",
-    //ip:"http://192.168.137.1:8099/"
-    //ip:"http://10.204.112.237:8099/"
-    ip:"https://mesqrcode.liwinon.com/",
+    //ip: "https://localhost/phone/",
+    ip:"https://mesqrcode.liwinon.com/phone/",
     appid: "wxce0c4f38650cfe54",
     appsecret: "46ff72c849a207a31ae6559120cfce70"
   }
