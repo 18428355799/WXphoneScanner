@@ -5,5 +5,7 @@
     "van-button": "../../vant/button/index",
     "van-dialog": "../../vant/dialog/index",
     "van-notify": "../../vant/notify/index"
-    }
+    },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 1
 }

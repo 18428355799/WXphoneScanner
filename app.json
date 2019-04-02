@@ -1,28 +1,39 @@
 {
-  "pages":[
+  "pages": [
+    "pages/welcome/welcome",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/my/my"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "QR Scan",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "扫一扫",
-      "iconPath": "icon/qrcode.png",
-      "selectedIconPath": "icon/qrcode_selected.png"
-    },
-    {
-      "pagePath": "pages/logs/logs",
-      "text": "更多",
-      "iconPath": "icon/up.png",
-      "selectedIconPath": "icon/up-selected.png"
-    }],
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "扫一扫",
+        "iconPath": "icon/qrcode.png",
+        "selectedIconPath": "icon/qrcode_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "icon/up.png",
+        "selectedIconPath": "icon/up-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/user.png",
+        "selectedIconPath": "icon/user-selected.png"
+      }
+    ],
     "color": "#000000",
     "selectedColor": "#FF00FF"
   }

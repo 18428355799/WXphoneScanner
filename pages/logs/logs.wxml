@@ -5,13 +5,17 @@
   <text class='tips'>向下滑动刷新</text>
 </view>
 <view class='allContent'>
-  <view class='title'>仅显示最近20条 \n</view>
+  <view class='title'>向上滑动加载更多 \n</view>
   <block wx:for="{{logs}}" wx:for-item="log">
     <view slot="footer">
-      <view class="content">
-        <text class="log-item">id:{{log.invID}} \n{{log.content}}</text>
-        <text> \n {{log.pubDate}}</text>
+      <view >
+        <text class="log-item">操作人:</text>
+        <text class='name'>{{log.name}}</text>
+        <text class="bxName">报销人: <text class='name'>{{log.reimbursement}}</text></text>
+        <text class="content">\n{{log.content}}</text>
       </view>
+      <text class='date'> {{log.pubDate}}</text>
+
       <view class='delButton'>
         <van-button class='custom-class' size="normal" type="danger" bind:click="delete_inv" data-id="{{log.invID}}">删除
 

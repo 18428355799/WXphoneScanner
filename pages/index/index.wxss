@@ -13,10 +13,25 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: rgb(231, 170, 170);
+  font-size: 60rpx;
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 200rpx;
   align-content: center;
+}
+.addbx{
+  margin-bottom: 20rpx;
+}
+.input1{
+  background-color: rgb(231, 170, 170);
+
+}
+.input2{
+  margin-top: 60rpx;
+  background-color: rgb(231, 170, 170);
+}
+.bx{
+  margin-top: 200rpx
 }

@@ -1,0 +1,4 @@
+<!--pages/welcome/welcome.wxml-->
+<van-notify id="custom-selector"/> <!-- 顶部提示-->
+<input type='text' class="input" name="userName" placeholder="请输入姓名" bindinput='nameInput'></input>
+<button class="button"bindtap="saveName">登录</button>

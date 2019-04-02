@@ -1,17 +1,31 @@
 <!--index.wxml-->
-<van-notify id="custom-selector"/> <!-- 顶部提示-->
+<van-notify id="custom-selector" />
+
+<!-- 顶部提示-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <text class="userinfo-nickname">{{userName}}</text>
+    <text>欢迎使用发票助手  </text>
   </view>
+
+  <demo-block title="组件调用" padding>
+
+    <van-dialog use-slot async-close show="{{ show }}" show-cancel-button transition="fade" bind:close="onClose" bind:confirm="addfp">
+      <input type='text' class="input3" name="fpNumber" placeholder="请输入发票号码" bindinput='fpNumberInput'></input>
+    </van-dialog>
+  </demo-block>
+  <view class='bx'>
+    <input type='text' class="input1" name="bxName" placeholder="请输入报销人姓名" bindinput='bxNameInput'></input>
+    <input type='text' class="input2" name="bxId" placeholder="请输入报销单单号" bindinput='bxIdInput'></input>
+
+  </view>
+
   <view class="usermotto">
-    <button id="custom-selector"class="user-motto" type='primary' bindtap='getscanCode'>{{motto}}
+    <button class="addbx"bindtap='cilkTianjia'>手动添加报销单</button>
+    <button id="custom-selector" class="user-motto" type='primary' bindtap='getscanCode'>{{motto}}
     </button>
-    
   </view>
- 
+
+
 </view>
+<van-dialog id="van-dialog" />

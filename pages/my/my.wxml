@@ -1,0 +1,45 @@
+<view class='section'>
+  <view class='section__title'>从</view>
+  <picker mode="date" value='{{time}}' start="2019-01-01" end="2044-09-01" bindchange='bindDateChange'>
+    <view class='picker'>
+      当前选择：{{date}}
+    </view>
+  </picker>
+</view>
+
+<view class='section'>
+  <view class='section__title'>到</view>
+  <picker mode="date" value='{{time}}' start="2019-01-01" end="2044-09-01" bindchange='bindDateChange2'>
+    <view class='picker'>
+      当前选择：{{date2}}
+    </view>
+  </picker>
+</view>
+<view>
+
+ <button id="custom-selector"class="user-motto" type='primary' bindtap='getMypage'>查询
+    </button>
+</view>
+
+<view class='allContent'>
+  <view class='title'>向上滑动加载更多 \n</view>
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <view slot="footer">
+     <view >
+        <text class="log-item">操作人:</text>
+        <text class='name'>{{log.name}}</text>
+        <text class="bxName">报销人: <text class='name'>{{log.reimbursement}}</text></text>
+        <text class="content">\n{{log.content}}</text>
+      </view>
+      <text class='date'> \n {{log.pubDate}}
+        </text>
+
+      <view class='delButton'>
+        <van-button class='custom-class' size="normal" type="danger" bind:click="delete_inv" data-id="{{log.invID}}">删除
+
+        </van-button>
+      </view>
+      <van-dialog id="van-dialog" />
+    </view>
+  </block>
+</view>

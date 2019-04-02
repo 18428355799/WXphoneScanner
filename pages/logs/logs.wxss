@@ -3,28 +3,55 @@
   flex-direction: column;
   padding: 40rpx;
 }
+
 .log-item {
   margin: auto;
-
 }
-.tips{
+
+.tips {
   color: red;
 }
-.tipss{
+
+.tipss {
   text-align: center;
   height: 70rpx;
 }
-.allContent{
+
+.allContent {
   height: 80rpx;
 }
-.title{
+
+.title {
   font-style: oblique;
   margin-bottom: 60rpx;
   text-align: center;
   font-size: 25rpx;
 }
 
-.delButton{
-  margin: 0,auto;
-  text-align: right
+.content {   
+  font-size: 33rpx;
+  color: #666;
+  overflow: scroll;
+  white-space: nowrap;
+  width: 99%;
+  display: -webkit-inline-box;
+}
+
+.delButton {
+  margin: 0, auto;
+  text-align: right;
+}
+
+.name {
+  color: rgb(231, 170, 170);
+}
+
+.bxName {
+  float: right;
+  margin-right: 10rpx;
+}
+
+.date {
+  font-weight: bold;
+  color: red;
 }
