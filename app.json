@@ -4,7 +4,6 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/my/my"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,5 +35,6 @@
     ],
     "color": "#000000",
     "selectedColor": "#FF00FF"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

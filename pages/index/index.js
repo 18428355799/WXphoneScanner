@@ -119,7 +119,7 @@ Page({
           },
           method: 'GET',
           success: function(res) {
-            console.log(res);
+            //console.log(res);
             Notify({
               text: res.data.msg + "\n" + "操作人："+wx.getStorageSync("userName"),
               duration: 2000,
@@ -137,7 +137,7 @@ Page({
             ;
           },
           fail: function(err) {
-            console.log(err);
+            //console.log(err);
             Notify({
               text: "网络请求失败！",
               duration: 4000,
